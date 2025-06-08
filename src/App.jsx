@@ -48,15 +48,17 @@ export default function App() {
 
         <div className="info-row">
 
-          <div className="info-box1">%towin</div> <div
-            className="info-box2">multi-x</div>
+          <div className="info-box1">%towin----coverage%</div> <div
+            className="info-box2">multi-x----placedships</div>
         </div>
         <div className="bet-row">
-          <div className="betinput-label">betinput</div>
-          <div className="betinput-btns">
-            <button className="ui-btn small">2X</button>
-            <button className="ui-btn small">1/2</button>
-            <button className="ui-btn small">MAX</button>
+          <div className="betinput-bar">
+            <span className="betinput-label">betinput</span>
+            <div className="betinput-btns">
+              <button className="ui-btn small">2X</button>
+              <button className="ui-btn small">1/2</button>
+              <button className="ui-btn small">MAX</button>
+            </div>
           </div>
         </div>
         <div className="tabs-row">
