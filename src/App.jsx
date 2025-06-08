@@ -21,24 +21,35 @@ export default function App() {
             <span className="rotate-icon">⟳</span>
           </button>
           <button className="ui-btn fire">★ FIRE</button>
-        </div>
-        <div className="api-call-box">API CALL</div>
-        <div className="slider-block">
+        </div><div className="slider-row">
           <input
             type="range"
             min="0"
             max="4"
             step="1"
-            className="vertical-slider"
-            orient="vertical"
+            className="horizontal-slider"
           />
         </div>
-        <div className="info-row">
-          <div className="bet-info">
-            <div className="bet-mult">1X3</div>
-            <div className="bet-amt">$100</div>
+
+        <div className="api-call-box">
+          <div className="api-col left">
+
+            <div className="api-value">$1250.08</div>
           </div>
-          <div className="info-box">INFO BOX</div>
+          <div className="api-col middle">
+
+            <div className="api-value">88.88</div>
+          </div>
+          <div className="api-col right">
+
+            <div className="api-value">8x3</div>
+          </div>
+        </div>
+
+        <div className="info-row">
+
+          <div className="info-box1">%towin</div> <div
+            className="info-box2">multi-x</div>
         </div>
         <div className="bet-row">
           <div className="betinput-label">betinput</div>

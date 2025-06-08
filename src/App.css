@@ -375,3 +375,85 @@ input[type=range]::-ms-fill-lower,
 input[type=range]::-ms-fill-upper {
   background: transparent;
 }
+
+.api-call-box {
+  background: var(--input-bg);
+  color: var(--white);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  min-height: 60px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 8px 0 0 0;
+  box-shadow: var(--shadow);
+  border: 2px solid #2f2c62;
+  padding: 0 0px;
+  gap: 0;
+}
+
+.api-call-box .api-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-right: 1.5px solid #39397a;
+}
+
+.api-call-box .api-col.right {
+  border-right: none;
+}
+
+.api-label {
+  font-size: 0.95em;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.api-value {
+  font-size: 1.18em;
+  color: #fff;
+  font-weight: 700;
+}
+
+.info-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.info-box1,
+.info-box2 {
+  flex: 1 1 0;
+  background-color: #000000;
+  color: var(--white, #fff);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.08em;
+  text-align: center;
+  padding: 18px 0;
+  box-shadow: var(--shadow, 0 2px 6px rgba(0, 0, 0, 0.08));
+  border: 1.5px solid #4442;
+  min-width: 0;
+  /* Fixes overflow on small screens */
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+@media (max-width: 600px) {
+  .info-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info-box1,
+  .info-box2 {
+    padding: 14px 0;
+    font-size: 1em;
+  }
+}
