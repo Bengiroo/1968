@@ -162,13 +162,14 @@ body,
 .slider-row {
   display: flex;
   justify-content: flex-start;
-  margin: 16px 18px 8px 18px;
+  margin: 32px 18px 32px 18px;
   box-sizing: border-box;
 }
 
 .horizontal-slider {
-  width: 100%;
+  width: 50%;
   max-width: 310px;
+  margin-left: 60px;
 }
 
 .api-call-box {
@@ -220,10 +221,10 @@ body,
 .info-row {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 12px;
   width: 100%;
-  margin: 16px 0;
-  padding: 0 18px;
+  margin: 0;
+  padding: 0 0;
   box-sizing: border-box;
 }
 
@@ -237,10 +238,65 @@ body,
   font-size: 1.08em;
   text-align: center;
   padding: 18px 0;
+  /* Taller */
   box-shadow: var(--shadow, 0 2px 6px rgba(0, 0, 0, 0.08));
   border: 1.5px solid #4442;
   min-width: 0;
+  max-width: 100%;
   transition: background 0.15s, box-shadow 0.15s;
+  height: 56px;
+  /* Set taller fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.info-box1,
+.info-box2 {
+  flex: 1 1 0;
+  max-width: 200px;
+  /* Scalable: will never exceed this width */
+  min-width: 0;
+  background-color: #000;
+  color: var(--white, #fff);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.08em;
+  text-align: center;
+  padding: 18px 0;
+  box-shadow: var(--shadow, 0 2px 6px rgba(0, 0, 0, 0.08));
+  border: 1.5px solid #4442;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background 0.15s, box-shadow 0.15s, max-width 0.15s;
+}
+
+@media (max-width: 600px) {
+  .info-row {
+    gap: 8px;
+  }
+
+  .info-box1,
+  .info-box2 {
+    max-width: 120px;
+    height: 44px;
+    font-size: 1em;
+  }
 }
 
 .bet-row {
@@ -378,8 +434,7 @@ body,
 @media (min-width: 700px) and (orientation: landscape) {
 
   .slider-row,
-  .api-call-box,
-  .info-row {
+  .api-call-box {
     margin-right: 18px;
     margin-left: 18px;
   }
@@ -407,6 +462,8 @@ body,
   .info-row {
     flex-direction: row;
     gap: 10px;
+
+    ;
   }
 
   .info-box1,

@@ -42,8 +42,8 @@ export default function App() {
           </div>
         </div>
         <div className="info-row">
-          <div className="info-box1">%towin----cov%</div>
-          <div className="info-box2">multi-x----placed</div>
+          <div className="info-box1">%towi</div>
+          <div className="info-box2">multi-x-d</div>
         </div>
         <div className="bet-row">
           <div className="betinput-bar">
